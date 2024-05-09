@@ -13,14 +13,28 @@ public class StatFrm extends JFrame implements ActionListener {
 
     public StatFrm() {
         setTitle("StatFrm");
-        setSize(400, 300);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setSize(800, 600);
+        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         setVisible(true);
         setContentPane(mainPanel);
+        btnBorrowedBookStat.setFocusable(false);
+        btnBorrowedBookStat.addActionListener(this);
+        btnFinaceStat.setFocusable(false);
+        btnFinaceStat.addActionListener(this);
+        btnReaderBorrowStat.setFocusable(false);
+        btnReaderBorrowStat.addActionListener(this);
+        btnCancel.setFocusable(false);
+        btnCancel.addActionListener(this);
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-
+        if (e.getSource() == btnBorrowedBookStat) {
+            new BookStatFrm();
+            this.dispose();
+        }
+        else if (e.getSource() == btnCancel) {
+            this.dispose();
+        }
     }
 }

@@ -14,7 +14,7 @@ public class BookDetailFrm extends JFrame implements ActionListener {
     public BookDetailFrm() {
         setTitle("BookDetailFrm");
         setSize(400, 300);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setVisible(true);
         setContentPane(mainPanel);
 

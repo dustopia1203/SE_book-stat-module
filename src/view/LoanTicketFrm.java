@@ -14,7 +14,7 @@ public class LoanTicketFrm extends JFrame implements ActionListener {
     public LoanTicketFrm() {
         setTitle("LoanTicketFrm");
         setSize(400, 300);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setVisible(true);
         setContentPane(mainPanel);
 
