@@ -1,25 +1,28 @@
 package model;
 
+import java.util.ArrayList;
+import java.util.Date;
+
 public class BorrowedBook {
     private int id;
-    private String payDate;
     private float deposit;
     private String note;
     private int amount;
-    private boolean isBorrowed;
     private Book book;
+    private Date payDate;
+    private ArrayList<BookError> bookErrors;
 
     public BorrowedBook() {
     }
 
-    public BorrowedBook(int id, String payDate, float deposit, String note, int amount, boolean isBorrowed, Book book) {
+    public BorrowedBook(int id, float deposit, String note, int amount, Book book, Date payDate, ArrayList<BookError> bookErrors) {
         this.id = id;
-        this.payDate = payDate;
         this.deposit = deposit;
         this.note = note;
         this.amount = amount;
-        this.isBorrowed = isBorrowed;
         this.book = book;
+        this.payDate = payDate;
+        this.bookErrors = bookErrors;
     }
 
     public int getId() {
@@ -28,14 +31,6 @@ public class BorrowedBook {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public String getPayDate() {
-        return payDate;
-    }
-
-    public void setPayDate(String payDate) {
-        this.payDate = payDate;
     }
 
     public float getDeposit() {
@@ -62,19 +57,27 @@ public class BorrowedBook {
         this.amount = amount;
     }
 
-    public boolean isBorrowed() {
-        return isBorrowed;
-    }
-
-    public void setBorrowed(boolean borrowed) {
-        isBorrowed = borrowed;
-    }
-
     public Book getBook() {
         return book;
     }
 
     public void setBook(Book book) {
         this.book = book;
+    }
+
+    public Date getPayDate() {
+        return payDate;
+    }
+
+    public void setPayDate(Date payDate) {
+        this.payDate = payDate;
+    }
+
+    public ArrayList<BookError> getBookErrors() {
+        return bookErrors;
+    }
+
+    public void setBookErrors(ArrayList<BookError> bookErrors) {
+        this.bookErrors = bookErrors;
     }
 }

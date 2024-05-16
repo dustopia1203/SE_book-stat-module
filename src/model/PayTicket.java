@@ -1,19 +1,20 @@
 package model;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 public class PayTicket {
     private int id;
-    private String bookError;
+    private Date payDate;
     private float compensate;
-    private ArrayList<BorrowedBook> borrowedBooks;
+    private ArrayList<Book> borrowedBooks;
 
     public PayTicket() {
     }
 
-    public PayTicket(int id, String bookError, float compensate, ArrayList<BorrowedBook> borrowedBooks) {
+    public PayTicket(int id, Date payDate, float compensate, ArrayList<Book> borrowedBooks) {
         this.id = id;
-        this.bookError = bookError;
+        this.payDate = payDate;
         this.compensate = compensate;
         this.borrowedBooks = borrowedBooks;
     }
@@ -26,12 +27,12 @@ public class PayTicket {
         this.id = id;
     }
 
-    public String getBookError() {
-        return bookError;
+    public Date getPayDate() {
+        return payDate;
     }
 
-    public void setBookError(String bookError) {
-        this.bookError = bookError;
+    public void setPayDate(Date payDate) {
+        this.payDate = payDate;
     }
 
     public float getCompensate() {
@@ -42,11 +43,11 @@ public class PayTicket {
         this.compensate = compensate;
     }
 
-    public ArrayList<BorrowedBook> getBorrowedBooks() {
+    public ArrayList<Book> getBorrowedBooks() {
         return borrowedBooks;
     }
 
-    public void setBorrowedBooks(ArrayList<BorrowedBook> borrowedBooks) {
+    public void setBorrowedBooks(ArrayList<Book> borrowedBooks) {
         this.borrowedBooks = borrowedBooks;
     }
 }
