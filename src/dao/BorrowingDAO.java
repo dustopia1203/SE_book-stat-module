@@ -71,7 +71,9 @@ public class BorrowingDAO extends DAO {
                             rs2.getString("author"),
                             rs2.getString("gendre"),
                             rs2.getString("publisher"),
-                            rs2.getInt("publicYear"));
+                            rs2.getInt("publicYear"),
+                            rs2.getFloat("rentPerDay"),
+                            rs2.getFloat("price"));
                     borrowedBook.setBook(book);
                     String query3 = "SELECT payDate \n" +
                             "FROM tblPayTicket pt \n" +

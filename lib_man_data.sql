@@ -7,12 +7,12 @@ INSERT INTO tblReader(id, idCard, name, address, email, tel, note)
 VALUES (2, 'R2', 'Reader 2', 'Address 2', 'reader2@mail.com', '0123456798', 'Note 2');
 INSERT INTO tblReader(id, idCard, name, address, email, tel, note)
 VALUES (3, 'R3', 'Reader 3', 'Address 3', 'reader3@mail.com', '0123456798', 'Note 3');
-INSERT INTO tblBook(id, name, author, gendre, publisher, publicYear)
-VALUES (1, 'Book 1', 'Author 1', 'Gendre 1', 'Publisher 1', 2001);
-INSERT INTO tblBook(id, name, author, gendre, publisher, publicYear)
-VALUES (2, 'Book 2', 'Author 2', 'Gendre 2', 'Publisher 2', 2002);
-INSERT INTO tblBook(id, name, author, gendre, publisher, publicYear)
-VALUES (3, 'Book 3', 'Author 3', 'Gendre 3', 'Publisher 3', 2003);
+INSERT INTO tblBook(id, name, author, gendre, publisher, publicYear, rentPerDay, price)
+VALUES (1, 'Book 1', 'Author 1', 'Gendre 1', 'Publisher 1', 2001, 5, 100);
+INSERT INTO tblBook(id, name, author, gendre, publisher, publicYear, rentPerDay, price)
+VALUES (2, 'Book 2', 'Author 2', 'Gendre 2', 'Publisher 2', 2002, 10, 110);
+INSERT INTO tblBook(id, name, author, gendre, publisher, publicYear, rentPerDay, price)
+VALUES (3, 'Book 3', 'Author 3', 'Gendre 3', 'Publisher 3', 2003, 15, 150);
 INSERT INTO tblBorrowing(id, borrowDate, expectPayDate, note, idReader)
 VALUES (1, '2011-01-01', '2011-01-10', 'Note 1', 1);
 INSERT INTO tblBorrowing(id, borrowDate, expectPayDate, note, idReader)

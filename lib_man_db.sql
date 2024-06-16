@@ -29,6 +29,8 @@ CREATE TABLE tblBook
     gendre VARCHAR(20) NOT NULL,
     publisher VARCHAR(25) NOT NULL,
     publicYear INT NOT NULL,
+	rentPerDay FLOAT NOT NULL,
+    price FLOAT NOT NULL,
     PRIMARY KEY (id)
 );
 CREATE TABLE tblBorrowing
