@@ -2,4 +2,4 @@
 
 ## Module database diagram
 
-![Databse diagram](databse_diagram.png)
+![Database diagram](database_diagram.png)
